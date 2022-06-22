@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header{
+    height: 50px;
+    background: orange;
+}
+.slider{
+    flex: 1;
+    overflow: hidden;
+}
+.slider-widht{
+    width: calc(100vw * 3);
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+.slider-item{
+    width: 100vw;
+    height: inherit;
+    background-size: cover;
+}
