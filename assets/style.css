@@ -16,15 +16,34 @@ header{
 .slider{
     flex: 1;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .slider-widht{
-    width: calc(100vw * 3);
     height: 100%;
     display: flex;
     transition: all ease 0.3s;
+    margin-left: 200vw;
 }
 .slider-item{
     width: 100vw;
     height: inherit;
     background-size: cover;
+}
+.control{
+    display: flex;
+    margin-top: -50px;
+}
+.c-buton{
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.selected{
+    background-color: orange;
 }
